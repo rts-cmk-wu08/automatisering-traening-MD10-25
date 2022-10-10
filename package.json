@@ -4,7 +4,9 @@
   "description": "- en figma fil (i assets mappen)\r - en index.html med 5 forud-definerede sections\r - en style.css som er tom (den er linket til html). Her kan du skrive din css.\r - en javascript fil med data (`data.js`)\r - en javascript fil hvor du skal skrive din kode (`index.js`)\r - begge javascript filer er loadet i html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack server --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",

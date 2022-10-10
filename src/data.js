@@ -1,5 +1,5 @@
 
-let hero = {
+export let hero = {
     image: "https://dazzling-squirrel-77a63d.netlify.app/imgs/hero.png",
     headline: "Find out how we can save your time in Backpacking in Europe",
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id eget scelerisque amet etiam in sit commodo. Pretium ut duis orci pulvinar pretium id consectetur.",
@@ -7,7 +7,7 @@ let hero = {
 }
 
 
-let services = [
+export let services = [
     {
         illustration: "https://dazzling-squirrel-77a63d.netlify.app/imgs/illustrations/exploring.png",
         headline: "Promoting your territory towards foreign tourists",
@@ -28,7 +28,7 @@ let services = [
     },
 ]
 
-let facilities = {
+export let facilities = {
     headline: "Making your facility known is our priority",
     options : [
         {
@@ -54,7 +54,7 @@ let facilities = {
     ]
 }
 
-let sites = {
+export let sites = {
     headline: "Join the community campervan sites managers.",
     text: "Discover all the equibbed areas in Italy. Find the shop with all the services for you and your camper.",
     btnicon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/arrow-icon.png",
@@ -77,7 +77,7 @@ let sites = {
     ]
 }
 
-let advantages = [
+export let advantages = [
     {
         icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/compare.png",
         headline: "Convenience and Transparency",
