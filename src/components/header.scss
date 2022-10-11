@@ -1,0 +1,80 @@
+@import "./variables/fonts.scss";
+*
+{
+margin: 0;
+padding: 0;
+}
+
+.container
+{
+    
+    &__heroWrapper
+    {
+        position: relative;
+        z-index: 10;
+    }
+    &__hero
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    width: calc(46.3rem - 0.8rem);
+    height: 33.5rem;
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+    top: -18rem;
+    left: 4.3rem;
+    padding-left: 3.6rem;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+
+    &__headline
+    {
+        font-family: $mainFont, sans-serif;
+        font-weight: 700;
+        font-size: 39px;
+        line-height: 49px;
+        width: 32.5rem;
+        margin-top: 6rem;
+    }
+
+    &__text
+    {
+        font-family: $secondFont, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        opacity: 0.6;
+        width: 32.1rem;
+        margin-top: 1.8rem;
+    }
+
+    &__link
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px 12px 16px;
+        gap: 8px;
+        height: 65px;
+        width: 250px;
+        background: #F78065;
+        font-family: $secondFont, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        margin-top: 3.1rem;
+    }
+}
+span
+{
+    color: #F78065;
+}
