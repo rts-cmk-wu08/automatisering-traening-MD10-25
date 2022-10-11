@@ -1,4 +1,4 @@
-
+import "./advArticle.scss"
 
 let advArticle = function(advantage) {
 
@@ -6,9 +6,9 @@ let advArticle = function(advantage) {
     element.classList.add('adv-article')
     
     element.innerHTML = `
-        <img src="${advantage.icon}" alt="icon" />
-        <h1>${advantage.headline}</h1>
-        <p>${advantage.text}</p>
+        <img class="adv-article__icon" src="${advantage.icon}" alt="icon" />
+        <h1 class="adv-article__headline">${advantage.headline}</h1>
+        <p class="adv-article__text">${advantage.text}</p>
     `
     
     return element

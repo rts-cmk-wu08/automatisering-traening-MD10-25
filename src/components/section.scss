@@ -1,4 +1,14 @@
+@import "./advArticle.scss";
+
 .section {
     width: 76.25rem;
     margin: 0 auto;
+}
+.advantages__headline
+{
+    margin: 0;
+    margin-bottom: 6.7rem;
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 36px;
 }

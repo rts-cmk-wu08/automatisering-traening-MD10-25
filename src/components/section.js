@@ -7,7 +7,7 @@ let element = document.createElement('section')
 element.classList.add("section")
 
 element.innerHTML = `
-    <h1>Our Advantages</h1>
+    <h1 class="advantages__headline">Our Advantages</h1>
 `
 
 element.append(advSection())
