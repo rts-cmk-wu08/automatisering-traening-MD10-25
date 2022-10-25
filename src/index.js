@@ -1,16 +1,12 @@
 import section from "./components/section.js"
 import header from "./components/header.js"
+import ContactForm from "./components/ContactForm.js"
 import "./components/variables/body.scss";
 
-let body = document.querySelector("body")
-body.append(header())
+let wrapper = document.querySelector(".wrapper")
+wrapper.append(header())
 
+wrapper.append(section())
 
-let wrapper = document.createElement("div")
-wrapper.classList.add("wrapper")
-body.append(wrapper)
-
-
-let element = document.querySelector(".wrapper")
-element.append(section())
+wrapper.append(ContactForm())
 

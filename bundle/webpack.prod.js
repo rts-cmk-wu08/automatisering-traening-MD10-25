@@ -3,11 +3,11 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const commonConfig = require("./webpack.common.js")
 
 module.exports = merge(
-  commonConfig,
-{
-  mode: "production",    
-  plugins: [
-    new CleanWebpackPlugin()
-      ]
-  }
+   commonConfig,
+   {
+    mode: "production",    
+    plugins: [
+            new CleanWebpackPlugin()
+        ]
+    }
 )

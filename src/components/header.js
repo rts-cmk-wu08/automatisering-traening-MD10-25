@@ -19,8 +19,11 @@ let heroFigure = function() {
         alt="globe icon"/>Explore</a>
     </section>
     `
+
+    
+
+
     return element
     }
-    console.log("hej med dig")
     
     export default heroFigure
