@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 
-let listOfComponents = ['index', 'update']
+let listOfComponents = ['index', 'update', 'delete']
 
 const entry = listOfComponents.reduce((entries, componentName) => {
 	entries[componentName] = path.join(__dirname, `../src/${componentName}.js`);

@@ -6,7 +6,14 @@ let UpdateForm = function(id) {
     element.classList.add('contactForm')
 
     fetch(`http://localhost:4000/comments/${id}`)
-    .then(response => response.json())
+    .then(response => {
+        if(response.status !== 200)
+        {
+            throw "Something went wrong!!!"
+        }
+
+        return response.json()
+    })
     .then(data => {
         console.log(data)
    
@@ -65,19 +72,41 @@ element.innerHTML = `
 
         console.log(data)
 
-        /*
-        fetch("http://localhost:4000/comments", {
-            method: 'POST',
+        
+        fetch(`http://localhost:4000/comments/${id}`, {
+            method: 'PUT',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8'
             },
             body: JSON.stringify(data)
         })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        */
+        .then(response => {
+            if(response.status === 200)
+            {
+                console.log("Resursen er opdateret")
+
+                element.innerHTML = `
+                    <h1>Din kommetar er blevet opdateret!</h1>
+                `
+                setTimeout(() => {
+                    window.location.replace("/index.html")
+                }, 1500)
+            }
+         
+        })
+        // .then(data => console.log(data))
+
     })
 
+})
+.catch(error => {
+    console.log(error)
+
+    element.innerHTML = `
+        <h1>There was an error</h1>
+        <p>It looks like you are trying to modify a non existing resource.</p>
+        <p>Click <a href="/index.html">here</a> to return to the front page.</p>
+    `
 })
 
 return element

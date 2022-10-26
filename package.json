@@ -1,5 +1,5 @@
 {
-  "name": "automatisering-traening-clurts",
+  "name": "automatisering-traening-MD10-25",
   "version": "1.0.0",
   "description": "- en figma fil (i assets mappen)\r - en index.html med 5 forud-definerede sections\r - en style.css som er tom (den er linket til html). Her kan du skrive din css.\r - en javascript fil med data (`data.js`)\r - en javascript fil hvor du skal skrive din kode (`index.js`)\r - begge javascript filer er loadet i html",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rts-cmk-wu08/automatisering-traening-clurts.git"
+    "url": "git+https://github.com/rts-cmk-wu08/automatisering-traening-MD10-25.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rts-cmk-wu08/automatisering-traening-clurts/issues"
+    "url": "https://github.com/rts-cmk-wu08/automatisering-traening-MD10-25/issues"
   },
-  "homepage": "https://github.com/rts-cmk-wu08/automatisering-traening-clurts#readme",
+  "homepage": "https://github.com/rts-cmk-wu08/automatisering-traening-MD10-25#readme",
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
