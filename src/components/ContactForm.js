@@ -39,6 +39,8 @@ let ContactForm = function() {
             <textarea name="message" id="message" cols="30" rows="10" required minlength=10></textarea>
         </div>
         <button type="submit">Send!</button>
+        <p>Need to update something click <a href="/update.html?id">here</a></p>
+        <p>Need to delete something click <a href="/delete.html">here</a></p>
         `
     
         element.addEventListener("submit", function(e) {
